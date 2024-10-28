@@ -4,8 +4,7 @@ import axios from "axios";
 function Login() {
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
-
-
+    
     const handleSubmit = (e) => {
         e.preventDefault()
         console.log("form submitted", {email, password})
@@ -15,11 +14,6 @@ function Login() {
                 "password": password,
             }
         ).then((response) => {console.log(response)})
-        /*
-        setFirstName("")
-        setLastName("")
-        setEmail("")
-        */
         setPassword("")
     }
 
