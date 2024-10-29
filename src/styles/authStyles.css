@@ -1,18 +1,18 @@
 @font-face {
   font-family: "Neue Machina";
-  src: url('src/assets/fonts/neue-machina-bold.woff2') format('woff2');
+  src: url('../assets/fonts/neue-machina-bold.woff2') format('woff2');
   font-weight: bold;
   font-display: swap;
 }
 @font-face {
   font-family: "Neue Machina";
-  src: url('src/assets/fonts/neue-machina-regular.woff2') format('woff2');
+  src: url('../assets/fonts/neue-machina-regular.woff2') format('woff2');
   font-weight: 500; /*medium*/
   font-display: swap;
 }
 @font-face {
   font-family: "Muller";
-  src: url('src/assets/fonts/muller-medium.woff2') format('woff2');
+  src: url('../assets/fonts/muller-medium.woff2') format('woff2');
   font-weight: normal;
   font-display: swap;
 }

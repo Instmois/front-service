@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { login } from "./api/auth.js";
+import { login } from "./auth.js";
 import carImage from '/car.png';
 import eyeIcon from "/eye-off.svg";
 import logo from "/logo.svg";

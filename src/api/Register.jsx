@@ -2,7 +2,7 @@ import { useState } from 'react';
 import logo from '/logo.svg';
 import carImage from '/car.png';
 import eyeIcon from '/eye-off.svg';
-import {register} from "./api/auth.js";
+import {register} from "./auth.js";
 
 function Register() {
     const [firstName, setFirstName] = useState('');
