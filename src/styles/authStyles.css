@@ -1,0 +1,189 @@
+@font-face {
+  font-family: "Neue Machina";
+  src: url('../assets/fonts/neue-machina-bold.woff2') format('woff2');
+  font-weight: bold;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Neue Machina";
+  src: url('../assets/fonts/neue-machina-regular.woff2') format('woff2');
+  font-weight: 500; /*medium*/
+  font-display: swap;
+}
+@font-face {
+  font-family: "Muller";
+  src: url('../assets/fonts/muller-medium.woff2') format('woff2');
+  font-weight: normal;
+  font-display: swap;
+}
+
+html, body {
+  margin: 0;
+  /*padding: 0;*/
+  /*overflow: hidden;*/
+  /*height: 100%;*/
+}
+
+.auth {
+  width: 100%;
+}
+
+.auth h1 {
+  text-align: center;
+  font-family: "Neue Machina", sans-serif;
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 140%;
+}
+
+.auth-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  height: 100vh;
+  padding: 0 20px;
+  box-sizing: border-box;
+  gap: 80px;
+}
+
+.auth-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+  max-height: 100%;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.form-group.row {
+  display: flex;
+  gap: 16px;
+}
+
+.form-group {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.input-field {
+  width: 100%;
+  padding: 16px;
+  border: 2px solid #fff;
+  background-color: #ffffff;
+  border-radius: 14px;
+  box-sizing: border-box;
+  font-size: 1rem;
+  font-family: Muller, sans-serif;
+}
+
+.input-field:focus {
+  border: 2px solid #747681;
+  outline: none;
+}
+
+.input-field::placeholder {
+  color: #747681;
+}
+
+.input-field[type="password"] {
+  padding-right: 30px;
+}
+
+.toggle-password {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+button[type="submit"] {
+  background-color: #B1F041;
+  color: #000202;
+  padding: 12px;
+  margin: 20px 0 65px;
+  font-family: 'Neue Machina', sans-serif;
+  font-weight: 500;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  font-size: 1em;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  width: 100%;
+}
+
+.question {
+  /*bottom: 40px;*/
+  /*position: absolute;*/
+  margin-top: auto;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+p.question {
+  color: #747681;
+  font-family: Muller, sans-serif;
+  font-size: 18px;
+}
+.question a {
+  color: #1C1D23;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.logo {
+  margin: 20px auto;
+  /*display: block;*/
+  width: 190px;
+  height: auto;
+}
+
+.image-container {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  max-width: 600px;
+  margin-top: 30px;
+  /*position: relative;*/
+}
+
+.car-image {
+  width: 100%;
+  height: auto;
+}
+
+
+button:hover {
+  border-color: #747681;
+}
+
+.success-message {
+  color: green;
+  margin-top: 10px;
+}
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .auth-page {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .auth-container, .image-container {
+    width: 100%;
+  }
+
+  .image-container {
+    margin-top: 30px;
+  }
+}
+
